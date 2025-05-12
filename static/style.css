@@ -1,0 +1,8 @@
+h1{
+    color: purple;
+    
+}
+
+h1:hover{
+    filter: blur(10px);
+}
