@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <form action="/" method="post">
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name">
-        <label for="email"> E-mail: </label>
-        <input type="email" name="email" id="email">
-        <input type="submit" value="Enviar">
-    </form>
+
+    <section>
+        <h2>Bem vindo</h2>
+        <button id="reser_page">Fazer Reserva</button>
+        <button id="cancel_page">Cancelar Reserva</button>
+        <button id="list_page">Ver mesas disponíveis</button>
+
+    </section>
+
+    <script>
+        document.getElementById('reser_page').addEventListener('click', function() {
+            window.location.href = '/reserva'; 
+        });
+    </script>
 </body>
 </html>
